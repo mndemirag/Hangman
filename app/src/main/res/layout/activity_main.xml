@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="hw5.hangman.MainActivity">
+
+
+
+    <!--CURRENT STATE-->
+    <TextView
+        android:id="@+id/main_currentword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:textSize="40dp"
+        android:textColor="#000000"
+        android:text="@string/main_word" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:textColor="#333333"
+        android:text="Guess a letter or the whole word!" />
+
+    <!--INPUT BOX-->
+    <EditText
+        android:id="@+id/input_guess"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter your guess here"
+        android:inputType="text" />
+
+    <!--GUESS BUTTON-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Guess!"
+        android:onClick="SendUpdateGUI" />
+
+    <!--GUESSED WORD-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:textColor="#444444"
+        android:text="You have guessed : " />
+    <TextView
+        android:id="@+id/main_guessed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:text="@string/main_guessed" />
+
+    <!--Score and attempt-->
+    <TextView
+        android:id="@+id/main_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="@string/main_score" />
+
+    <TextView
+        android:id="@+id/main_attempt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="@string/main_attempt" />
+
+
+
+
+</LinearLayout>

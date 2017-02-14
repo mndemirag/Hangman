@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Hangman</string>
+    <string name="welcome_text1">Welcome!</string>
+    <string name="welcome_text2">Enter connection info : </string>
+    <string name="welcome_textIP">IP Address :</string>
+    <string name="welcome_iphint">IP Address</string>
+    <string name="welcome_textPort">Port :</string>
+    <string name="welcome_porthint">Port</string>
+    <string name="welcome_button">PLAY!</string>
+
+    <string name="main_score">Score : 0</string>
+    <string name="main_attempt">Attempt(s) left : 0</string>
+    <string name="main_word">XXXXX</string>
+    <string name="main_guessed">NONE</string>
+</resources>
